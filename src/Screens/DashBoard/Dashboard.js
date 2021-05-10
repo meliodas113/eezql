@@ -1,7 +1,8 @@
-import React, { useState, lazy } from "react";
+import React, { useState, lazy, useEffect } from "react";
 import "./DashBoard.css";
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
+import { useHistory } from "react-router-dom";
 //calling theme action
 import { themeActions } from "../../store/theme-slice";
 import { motion } from "framer-motion";
@@ -45,7 +46,15 @@ function Dashboard() {
   //get other respective states from redux
   const themeStatus = useSelector(state => state.theme.darkTheme);
   const avatar = useSelector(state => state.user.avatar);
+  const isLoggedIn = useSelector(state => state.user.userLoggedIn);
   const dispatch = useDispatch();
+  const history = useHistory();
+  useEffect(() => {
+    if (!isLoggedIn) {
+      alert("Please login to continue");
+      history.push("/avatar");
+    }
+  }, []);
 
   //theme status to redux
   const setDarkMode = () => {

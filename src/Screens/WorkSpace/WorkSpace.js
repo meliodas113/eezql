@@ -1,4 +1,4 @@
-import React, { useState, useRef, lazy } from "react";
+import React, { useState, useRef, lazy, useEffect } from "react";
 import "./WorkSpace.css";
 import { Link } from "react-router-dom";
 
@@ -37,6 +37,13 @@ function WorkSpace() {
   const themeStatus = useSelector(state => state.theme.darkTheme);
   const avatar = useSelector(state => state.user.avatar);
   const files = useSelector(state => state.file.files);
+  const isLoggedIn = useSelector(state => state.user.userLoggedIn);
+  useEffect(() => {
+    if (!isLoggedIn) {
+      alert("Please login to continue");
+      history.push("/avatar");
+    }
+  }, []);
 
   const history = useHistory();
   const dispatch = useDispatch();
