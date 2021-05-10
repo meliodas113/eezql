@@ -17,6 +17,15 @@ const fileSlice = createSlice({
       };
       state.files.push(newFile);
     },
+    setFileUnderEdit(state, action) {
+      const fileToEdit = action.payload;
+      var setFile = {
+        name: fileToEdit.name,
+        fileContent: fileToEdit.fileContent,
+        file: fileToEdit.file
+      };
+      state.fileContent = setFile;
+    },
     // to delete file
     deleteFile(state, action) {
       const fileName = action.payload;
