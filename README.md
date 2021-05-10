@@ -38,6 +38,6 @@ Mobile - 3.1s (Time to interactive)
 
 ## Demo
 
-App is hosted on Netlify.
+Hosted on Netlify.
 
 [Link](https://eezql.netlify.app/)
