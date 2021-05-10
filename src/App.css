@@ -1,38 +1,72 @@
+@font-face {
+  font-family: "StereoFunk";
+  src: url("./fonts/Stereofunk.woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MonoLisa";
+  src: url("./fonts/MonoLisa-Regular.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins-Medium";
+  src: url("./fonts/Poppins-Medium.woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("./fonts/Poppins-Regular.woff");
+  font-display: swap;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .App {
-  text-align: center;
+  width: 100vw;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App .ParticlesDiv {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  transition: all 0.2s ease-in-out;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#tsparticles {
+  width: 100vw;
+  height: 100vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App .headerDiv {
+  width: 96%;
+  height: 10%;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 0 2% 0 2%;
+}
+
+.App .headerDiv .header {
+  font-size: 2vw;
+  font-family: "StereoFunk";
+  color: #121633;
+}
+
+.App .headerDiv .startBtn {
+  font-family: "Poppins-Medium";
+  font-size: 1.5vw;
+  background-color: #5ac895;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  padding: 0.8% 2% 0.8% 2%;
+  border-radius: 40px;
+  cursor: pointer;
+  box-shadow: 1px -4px 63px -27px rgba(90, 200, 149, 0.34);
 }

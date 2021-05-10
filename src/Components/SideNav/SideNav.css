@@ -1,0 +1,44 @@
+.SideNav {
+  width: 8%;
+  height: 100%;
+}
+
+.SideNav .heading {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.SideNav .heading .headingText {
+  font-size: 1.9vw;
+  font-family: "StereoFunk";
+}
+
+.SideNav .sideNavOptions {
+  width: 100%;
+  height: 90%;
+}
+
+.SideNav .sideNavOptions .option {
+  width: 100%;
+  height: 13%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Poppins-Medium";
+  cursor: pointer;
+}
+
+@media (min-width: 380px) and (max-width: 800px) {
+  .SideNav {
+    display: none;
+  }
+}
+@media (min-width: 200px) and (max-width: 376px) {
+  .SideNav {
+    display: none;
+  }
+}

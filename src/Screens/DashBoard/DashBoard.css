@@ -1,0 +1,237 @@
+.DashBoard {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.DashBoard .playgroundDiv {
+  width: 92%;
+  height: 100%;
+  transition: all 0.2s ease-in-out;
+}
+
+.DashBoard .header {
+  width: 100%;
+  height: 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.DashBoard .header .actionBtns {
+  width: 15%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.DashBoard .header .headerText {
+  font-size: 2vw;
+  margin-left: 2%;
+  font-weight: bold;
+  font-family: "Poppins-Medium";
+}
+
+.DashBoard .header .actionBtns .avatar {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.DashBoard .header .actionBtns .homeBtn {
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.DashBoard .playgroundDiv .TableDiv {
+  width: 100%;
+  height: 92%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.DashBoard .playgroundDiv .TableDiv .Editor {
+  width: 45%;
+  height: 90%;
+}
+
+.DashBoard .playgroundDiv .TableDiv .Editor .actionsDiv {
+  width: 96%;
+  padding: 0 2% 0 2%;
+  height: 10%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: white;
+  /* border-bottom: 1px solid rgb(235, 232, 232); */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.DashBoard .playgroundDiv .TableDiv .Editor .runbtn {
+  font-family: "Poppins-Medium";
+  font-size: 1.2vw;
+  background-color: #56ca94;
+  color: white;
+  padding: 0.8% 5% 0.8% 5%;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 1px -4px 63px -27px rgba(90, 200, 149, 0.34);
+  transition: all 0.2s ease-in-out;
+}
+
+.DashBoard .playgroundDiv .TableDiv .Editor .RealEditor {
+  width: 100%;
+  height: 90%;
+  background-color: #fcfcfc;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.DashBoard .playgroundDiv .TableDiv .Editor .RealEditor .code {
+  width: 100%;
+  height: 3%;
+  display: flex;
+}
+
+.DashBoard .playgroundDiv .TableDiv .Editor .RealEditor .code .indexDiv {
+  width: 5%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9em;
+  font-family: "MonoLisa";
+}
+
+.DashBoard .playgroundDiv .TableDiv .Editor .RealEditor .code .codebody {
+  width: 93%;
+  padding-left: 2%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 0.9em;
+  font-family: "MonoLisa";
+}
+
+.DashBoard .playgroundDiv .TableDiv .TableContainer {
+  width: 45%;
+  height: 90%;
+  border-radius: 10px;
+}
+
+.DashBoard .playgroundDiv .TableDiv .TableContainer table {
+  width: 90%;
+  margin: 2% auto;
+}
+
+.DashBoard .playgroundDiv .TableDiv .TableContainer table {
+  width: 90%;
+  margin: 5% auto;
+}
+
+.DashBoard .playgroundDiv .TableDiv .TableContainer table th {
+  text-align: center;
+  padding: 2%;
+  font-family: "Poppins-Medium";
+}
+
+.DashBoard .playgroundDiv .TableDiv .TableContainer table td {
+  text-align: center;
+  padding: 3%;
+  font-family: "Poppins-Medium";
+}
+
+@media (min-width: 380px) and (max-width: 800px) {
+  .DashBoard .playgroundDiv {
+    width: 100%;
+  }
+  .DashBoard .header {
+    justify-content: space-between;
+  }
+  .DashBoard .header .actionBtns {
+    width: 35%;
+  }
+  .DashBoard .header .actionBtns .avatar {
+    width: 35px;
+    height: 35px;
+  }
+  .DashBoard .header .headerText {
+    display: none;
+  }
+  .DashBoard .playgroundDiv .TableDiv {
+    flex-direction: column;
+  }
+  .DashBoard .playgroundDiv .TableDiv .Editor {
+    width: 95%;
+    height: 45%;
+  }
+  .DashBoard .playgroundDiv .TableDiv .Editor .actionsDiv {
+    height: 14%;
+  }
+  .DashBoard .playgroundDiv .TableDiv .Editor .RealEditor {
+    height: 86%;
+  }
+  .DashBoard .playgroundDiv .TableDiv .Editor .RealEditor .code {
+    height: 8%;
+  }
+  .DashBoard .playgroundDiv .TableDiv .Editor .runbtn {
+    font-size: 1.2em;
+  }
+  .DashBoard .playgroundDiv .TableDiv .TableContainer {
+    width: 95%;
+    height: 45%;
+  }
+}
+
+@media (min-width: 200px) and (max-width: 376px) {
+  .DashBoard .playgroundDiv {
+    width: 100%;
+  }
+  .DashBoard .header {
+    justify-content: space-between;
+  }
+  .DashBoard .header .actionBtns {
+    width: 45%;
+  }
+  .DashBoard .header .actionBtns .avatar {
+    width: 35px;
+    height: 35px;
+  }
+  .DashBoard .header .headerText {
+    display: none;
+  }
+  .DashBoard .playgroundDiv .TableDiv {
+    flex-direction: column;
+  }
+  .DashBoard .playgroundDiv .TableDiv .Editor {
+    width: 95%;
+    height: 45%;
+  }
+  .DashBoard .playgroundDiv .TableDiv .Editor .actionsDiv {
+    height: 14%;
+  }
+  .DashBoard .playgroundDiv .TableDiv .Editor .RealEditor {
+    height: 86%;
+  }
+  .DashBoard .playgroundDiv .TableDiv .Editor .RealEditor .code {
+    height: 8%;
+  }
+  .DashBoard .playgroundDiv .TableDiv .Editor .runbtn {
+    font-size: 0.8em;
+    border-radius: 5px;
+  }
+  .DashBoard .playgroundDiv .TableDiv .Editor .RealEditor .code .codebody {
+    font-size: 0.7em;
+  }
+  .DashBoard .playgroundDiv .TableDiv .TableContainer {
+    width: 95%;
+    height: 45%;
+  }
+}

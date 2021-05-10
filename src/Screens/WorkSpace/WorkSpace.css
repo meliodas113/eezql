@@ -1,0 +1,305 @@
+.WorkSpace {
+  width: 100%;
+  height: 100%;
+  transition: all 0.1s ease-in-out;
+  z-index: 2;
+}
+
+.WorkSpace .headerDiv {
+  width: 96%;
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2% 0 2%;
+}
+
+.WorkSpace .headerDiv .header {
+  font-size: 2vw;
+  font-family: "StereoFunk";
+  color: #121633;
+}
+
+.WorkSpace .headerDiv .userDiv {
+  width: 15%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.WorkSpace .headerDiv .userDiv .homeBtn {
+  font-size: 2.3vw;
+}
+
+.WorkSpace .headerDiv .avatar {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.WorkSpace .WorkArea {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.WorkSpace .WorkArea .UploadArea {
+  width: 95%;
+  height: 95%;
+  border-radius: 10px;
+  box-shadow: 0px 2px 20px -3px rgba(245, 242, 242, 0.75);
+}
+
+.WorkSpace .WorkArea .UploadArea .headerDiv {
+  color: #56ca94;
+  font-family: "Poppins-Medium";
+  font-size: 1.7vw;
+  background-color: rgb(250, 248, 248);
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.WorkSpace .WorkArea .UploadArea .uploadDiv {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.WorkSpace .WorkArea .UploadArea .uploadDiv .DragDrop {
+  width: 45%;
+  height: 90%;
+  background-color: rgb(247, 247, 247);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: all 0.2s ease-in-out;
+  border-radius: 10px;
+}
+
+.WorkSpace .WorkArea .UploadArea .uploadDiv .DragDropIcon {
+  font-size: 12vw;
+  color: #c7c9d3;
+}
+
+.WorkSpace .WorkArea .UploadArea .uploadDiv .dndText {
+  font-size: 1.5vw;
+  color: #c7c9d3;
+  font-family: "Poppins-Medium";
+}
+
+.WorkSpace .WorkArea .UploadArea .uploadDiv .TableDiv {
+  width: 45%;
+  height: 90%;
+  border-radius: 10px;
+  box-shadow: 0px 2px 20px -3px rgba(245, 242, 242, 0.75);
+  overflow: scroll;
+}
+
+.WorkSpace .WorkArea .UploadArea .uploadDiv .TableDiv table {
+  margin: 3% auto;
+  border-radius: 5px;
+  font-family: "Poppins-Regular";
+}
+
+.WorkSpace .WorkArea .UploadArea .uploadDiv .TableDiv table th {
+  padding: 2%;
+}
+
+.WorkSpace .WorkArea .UploadArea .uploadDiv .TableDiv table td {
+  background-color: #fdfdfd;
+  padding: 1.5%;
+  text-align: center;
+  color: #959697;
+}
+
+.WorkSpace .WorkArea .UploadArea .uploadDiv .TableDiv .fileCard {
+  display: none;
+}
+
+@media (min-width: 200px) and (max-width: 376px) {
+  .WorkSpace .headerDiv .header {
+    font-size: 1.2em;
+  }
+
+  .WorkSpace .headerDiv {
+    width: 95%;
+    padding-right: 0%;
+    padding-left: 5%;
+  }
+  .WorkSpace .headerDiv .userDiv {
+    width: 55%;
+  }
+  .WorkSpace .headerDiv .avatar {
+    width: 28px;
+    height: 28px;
+  }
+  .WorkSpace .headerDiv .userDiv .homeBtn {
+    font-size: 1.5em;
+  }
+  .WorkSpace .UploadArea .headerDiv {
+    width: 90%;
+    height: 8%;
+    padding: 0 5% 0 5%;
+  }
+  .WorkSpace .WorkArea .UploadArea .uploadDiv .dndText {
+    font-size: 0.8em;
+    width: 100%;
+    text-align: center;
+  }
+  .WorkSpace .WorkArea .UploadArea .headerDiv {
+    font-size: 1.2em;
+  }
+  .WorkSpace .WorkArea .UploadArea .uploadDiv {
+    flex-direction: column-reverse;
+  }
+  .WorkSpace .WorkArea .UploadArea .uploadDiv .TableDiv {
+    width: 95%;
+    height: 65%;
+  }
+  .WorkSpace .WorkArea .UploadArea .uploadDiv .DragDrop {
+    width: 95%;
+    height: 30%;
+  }
+  .WorkSpace .WorkArea .UploadArea .uploadDiv .TableDiv table {
+    font-size: 0.8em;
+    display: none;
+  }
+  .WorkSpace .WorkArea .UploadArea .uploadDiv .TableDiv .fileCard {
+    width: 95%;
+    height: 20%;
+    display: block;
+    margin: 2% auto;
+  }
+
+  .WorkSpace .WorkArea .UploadArea .uploadDiv .TableDiv .fileCard .fileHeading {
+    width: 95%;
+    height: 60%;
+    padding: 0 0 0 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Poppins-Regular";
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  .WorkSpace .WorkArea .UploadArea .uploadDiv .TableDiv .fileCard .fileActions {
+    width: 30%;
+    display: flex;
+    font-family: "Poppins-Regular";
+    justify-content: space-evenly;
+    font-size: 1.2em;
+  }
+
+  .WorkSpace .WorkArea .UploadArea .uploadDiv .TableDiv .fileCard .fileDetails {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    font-family: "Poppins-Regular";
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 0.9em;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+}
+
+@media (min-width: 380px) and (max-width: 800px) {
+  .WorkSpace .headerDiv .header {
+    font-size: 1.5em;
+  }
+
+  .WorkSpace .headerDiv {
+    width: 95%;
+    padding-right: 0%;
+    padding-left: 5%;
+  }
+  .WorkSpace .headerDiv .userDiv {
+    width: 55%;
+  }
+  .WorkSpace .headerDiv .avatar {
+    width: 35px;
+    height: 35px;
+  }
+  .WorkSpace .headerDiv .userDiv .homeBtn {
+    font-size: 2em;
+  }
+  .WorkSpace .UploadArea .headerDiv {
+    width: 90%;
+    height: 8%;
+    padding: 0 5% 0 5%;
+  }
+  .WorkSpace .WorkArea .UploadArea .uploadDiv .dndText {
+    font-size: 0.8em;
+    width: 100%;
+    text-align: center;
+  }
+  .WorkSpace .WorkArea .UploadArea .headerDiv {
+    font-size: 1.2em;
+  }
+  .WorkSpace .WorkArea .UploadArea .uploadDiv {
+    flex-direction: column-reverse;
+  }
+  .WorkSpace .WorkArea .UploadArea .uploadDiv .TableDiv {
+    width: 95%;
+    height: 65%;
+  }
+  .WorkSpace .WorkArea .UploadArea .uploadDiv .DragDrop {
+    width: 95%;
+    height: 30%;
+  }
+  .WorkSpace .WorkArea .UploadArea .uploadDiv .TableDiv table {
+    font-size: 0.8em;
+    display: none;
+  }
+  .WorkSpace .WorkArea .UploadArea .uploadDiv .TableDiv .fileCard {
+    width: 95%;
+    height: 20%;
+    display: block;
+    margin: 2% auto;
+  }
+
+  .WorkSpace .WorkArea .UploadArea .uploadDiv .TableDiv .fileCard .fileHeading {
+    width: 95%;
+    height: 60%;
+    padding: 0 0 0 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Poppins-Regular";
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  .WorkSpace .WorkArea .UploadArea .uploadDiv .TableDiv .fileCard .fileActions {
+    width: 30%;
+    display: flex;
+    font-family: "Poppins-Regular";
+    justify-content: space-evenly;
+    font-size: 1.5em;
+  }
+
+  .WorkSpace .WorkArea .UploadArea .uploadDiv .TableDiv .fileCard .fileDetails {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    font-family: "Poppins-Regular";
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 1em;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+}

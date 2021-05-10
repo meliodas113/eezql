@@ -1,0 +1,297 @@
+.Home {
+  width: 100%;
+  height: 100%;
+  transition: all 0.1s ease-in-out;
+  z-index: 2;
+}
+
+.Home .headerDiv {
+  width: 96%;
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2% 0 2%;
+}
+
+.Home .headerDiv .header {
+  font-size: 2vw;
+  font-family: "StereoFunk";
+  color: #121633;
+}
+
+.Home .headerDiv .userContainer {
+  width: 15%;
+  /* background-color: #56ca94; */
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.Home .headerDiv .userContainer .avatar {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  margin-right: 5%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.Home .introDiv {
+  width: 100%;
+  height: 35%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Home .introDiv .introTxt {
+  font-family: "Poppins-Medium";
+  font-weight: bold;
+  color: #121633;
+  font-size: 2.8vw;
+  width: 60%;
+  text-align: center;
+}
+.Home .introDiv .subtext {
+  font-family: "Poppins-Medium";
+  color: #81838b;
+  font-size: 1.3vw;
+  width: 60%;
+  text-align: center;
+}
+
+.Home .introDiv .startBtn {
+  font-family: "Poppins-Medium";
+  font-size: 1.5vw;
+  background-color: #5ac895;
+  color: white;
+  padding: 0.8% 2% 0.8% 2%;
+  border-radius: 40px;
+  cursor: pointer;
+  box-shadow: 1px -4px 63px -27px rgba(90, 200, 149, 0.34);
+  /* transition: all 0.2s ease-in-out; */
+}
+
+/* .Home .introDiv .startBtn:hover {
+  background-color: white;
+  color: #5ac895;
+} */
+
+.Home .DemoDiv {
+  width: 100%;
+  height: 55%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+
+.Home .DemoDiv .DemoEditor {
+  width: 46%;
+  height: 90%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-shadow: 0px 2px 20px -3px rgba(233, 230, 230, 0.75);
+}
+
+.Home .DemoDiv .DemoEditor .actionsDiv {
+  width: 96%;
+  padding: 0 2% 0 2%;
+  height: 14%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: white;
+  /* border-bottom: 1px solid rgb(235, 232, 232); */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Home .DemoDiv .DemoEditor .actionsDiv .runbtn {
+  font-family: "Poppins-Medium";
+  font-size: 1.2vw;
+  background-color: #56ca94;
+  color: white;
+  padding: 0.8% 5% 0.8% 5%;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 1px -4px 63px -27px rgba(90, 200, 149, 0.34);
+  transition: all 0.2s ease-in-out;
+}
+
+.Home .DemoDiv .DemoEditor .Editor {
+  width: 100%;
+  height: 86%;
+  background-color: #fcfcfc;
+}
+
+.Home .DemoDiv .DemoEditor .Editor .code {
+  width: 100%;
+  height: 10%;
+  display: flex;
+}
+
+.Home .DemoDiv .DemoEditor .Editor .code .indexDiv {
+  width: 5%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9em;
+  font-family: "MonoLisa";
+}
+
+.Home .DemoDiv .DemoEditor .Editor .code .codebody {
+  width: 93%;
+  padding-left: 2%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 0.9em;
+  font-family: "MonoLisa";
+}
+
+.Home .DemoDiv .DemoTable {
+  width: 46%;
+  height: 90%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-shadow: 0px 2px 20px -3px rgba(233, 230, 230, 0.75);
+}
+
+.Home .DemoDiv .DemoTable .tableHeading {
+  width: 98%;
+  height: 14%;
+  background-color: #fcfcfc;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 2%;
+  font-family: "Poppins-Regular";
+  color: #5ac895;
+}
+
+.Home .DemoDiv .DemoTable .tableContent {
+  width: 100%;
+  height: 86%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Home .DemoDiv .DemoTable .tableContent table {
+  width: 95%;
+}
+
+.Home .DemoDiv .DemoTable .tableContent table th {
+  background-color: #f5f6fa;
+  padding: 2%;
+  border: none;
+  color: #81838b;
+  font-family: "Poppins-Regular";
+}
+
+.Home .DemoDiv .DemoTable .tableContent table td {
+  background-color: #fcfcfc;
+  padding: 1%;
+  border: none;
+  color: #81838b;
+  font-family: "Poppins-Regular";
+  text-align: center;
+}
+
+@media (min-width: 380px) and (max-width: 800px) {
+  .Home {
+    height: 100%;
+  }
+  .Home .headerDiv {
+    width: 90%;
+    padding: 0 5% 0 5%;
+  }
+  .Home .headerDiv .header {
+    font-size: 1.5em;
+  }
+
+  .Home .headerDiv .userContainer {
+    width: 35%;
+  }
+  .Home .introDiv .introTxt {
+    font-size: 1.7em;
+    width: 90%;
+    margin-bottom: 15%;
+  }
+  .Home .introDiv .subtext {
+    font-size: 1.3em;
+    width: 95%;
+    margin-bottom: 5%;
+  }
+
+  .Home .introDiv .startBtn {
+    font-size: 1.5em;
+    padding: 1% 5% 1% 5%;
+  }
+
+  .Home .DemoDiv {
+    display: none;
+  }
+
+  .Home .introDiv {
+    height: 90%;
+    justify-content: center;
+  }
+  .Home .headerDiv .userContainer .avatar {
+    display: none;
+  }
+}
+
+@media (min-width: 200px) and (max-width: 376px) {
+  .Home .headerDiv {
+    width: 90%;
+    padding: 0 5% 0 5%;
+  }
+  .Home .headerDiv .header {
+    font-size: 1.5em;
+  }
+
+  .Home .headerDiv .userContainer {
+    width: 35%;
+  }
+  .Home .introDiv .introTxt {
+    font-size: 1.7em;
+    width: 90%;
+    margin-bottom: 15%;
+  }
+  .Home .introDiv .subtext {
+    font-size: 1.3em;
+    width: 95%;
+    margin-bottom: 5%;
+  }
+
+  element.style {
+    color: rgb(35, 32, 31);
+    background-color: rgb(255, 220, 2);
+    box-shadow: none;
+  }
+  .Home .introDiv .startBtn {
+    font-size: 1.5em;
+    padding: 1% 5% 1% 5%;
+  }
+
+  .Home .DemoDiv {
+    display: none;
+  }
+
+  .Home .introDiv {
+    height: 90%;
+    justify-content: center;
+  }
+  .Home .headerDiv .userContainer .avatar {
+    display: none;
+  }
+}

@@ -1,0 +1,28 @@
+.Loader {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Loader .text {
+  font-size: 3em;
+  font-family: "StereoFunk";
+  animation: mymove 5s infinite;
+}
+
+.Loader .loadText {
+  font-size: 1em;
+  font-family: "Poppins-Medium";
+}
+
+@keyframes mymove {
+  from {
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(1);
+  }
+}

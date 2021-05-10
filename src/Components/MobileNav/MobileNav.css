@@ -1,0 +1,245 @@
+.MobileNav {
+  display: none;
+}
+
+@media (min-width: 380px) and (max-width: 800px) {
+  .MobileNav {
+    display: block;
+  }
+  .MobileNav .NavIcon {
+    width: 35px;
+    height: 35px;
+    margin-left: 40%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .MobileNav .NavIcon span {
+    width: 50%;
+    height: 3px;
+    background-color: black;
+    border-radius: 5px;
+  }
+
+  .MobileNav .MobiNav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25vh;
+    height: 100vh;
+    z-index: 4;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .MobileNav .MobiNav .MobHeader {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "StereoFunk";
+    font-size: 2.4em;
+  }
+
+  .MobileNav .MobiNav .MobOptions {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .MobileNav .MobiNav .MobOptions .MobOption {
+    width: 70%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .MobileNav .MobiNav .MobOptions .MobOption .MobOptionName {
+    font-size: 1em;
+    font-family: "Poppins-Regular";
+  }
+
+  .MobileNav .MobiNavClose {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 25vh;
+    height: 100vh;
+    z-index: 4;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .MobileNav .MobiNavClose .MobHeader {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "StereoFunk";
+    font-size: 2.4em;
+  }
+
+  .MobileNav .MobiNavClose .MobOptions {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .MobileNav .MobiNavClose .MobOptions .MobOption {
+    width: 70%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .MobileNav .MobiNavClose .MobOptions .MobOption .MobOptionName {
+    font-size: 1em;
+    font-family: "Poppins-Regular";
+  }
+
+  .MobileNav .blurDiv {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 3;
+  }
+
+  .MobileNav .blurDivClose {
+    display: none;
+  }
+}
+
+@media (min-width: 200px) and (max-width: 376px) {
+  .MobileNav {
+    display: block;
+  }
+  .MobileNav .NavIcon {
+    width: 35px;
+    height: 35px;
+    margin-left: 40%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .MobileNav .NavIcon span {
+    width: 50%;
+    height: 3px;
+    background-color: black;
+    border-radius: 5px;
+  }
+
+  .MobileNav .MobiNav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25vh;
+    height: 100vh;
+    z-index: 4;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .MobileNav .MobiNav .MobHeader {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "StereoFunk";
+    font-size: 2.2em;
+  }
+
+  .MobileNav .MobiNav .MobOptions {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .MobileNav .MobiNav .MobOptions .MobOption {
+    width: 70%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .MobileNav .MobiNav .MobOptions .MobOption .MobOptionName {
+    font-size: 1em;
+    font-family: "Poppins-Regular";
+  }
+
+  .MobileNav .MobiNavClose {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 25vh;
+    height: 100vh;
+    z-index: 4;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .MobileNav .MobiNavClose .MobHeader {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "StereoFunk";
+    font-size: 2.2em;
+  }
+
+  .MobileNav .MobiNavClose .MobOptions {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .MobileNav .MobiNavClose .MobOptions .MobOption {
+    width: 70%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .MobileNav .MobiNavClose .MobOptions .MobOption .MobOptionName {
+    font-size: 1em;
+    font-family: "Poppins-Regular";
+  }
+
+  .MobileNav .blurDiv {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 3;
+  }
+
+  .MobileNav .blurDivClose {
+    display: none;
+  }
+}
