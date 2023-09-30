@@ -24,7 +24,7 @@ const fileSlice = createSlice({
         fileContent: fileToEdit.fileContent,
         file: fileToEdit.file
       };
-      state.fileContent = setFile;
+      state.fileUnderEdit = setFile;
     },
     // to delete file
     deleteFile(state, action) {
